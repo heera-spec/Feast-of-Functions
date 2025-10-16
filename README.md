@@ -88,7 +88,7 @@ This is a standalone HTML/CSS/JavaScript game with no external dependencies. All
 ### Customization
 
 You can customize the game by:
-- Adjusting difficulty levels in the `LEVELS` array (lines 395-423)
+- Adjusting difficulty levels in the `LEVELS` array (search for "Level definitions" in index.html)
 - Modifying number ranges and operations
 - Changing the number of required correct answers
 - Creating your own themed asset files
