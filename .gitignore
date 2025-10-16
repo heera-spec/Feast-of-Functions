@@ -1,0 +1,20 @@
+# Asset files - users should add their own asset files locally
+# These are excluded to avoid committing large binary files to the repository
+Assets/*.jpg
+Assets/*.png
+Assets/*.mp3
+Assets/*.wav
+
+# Keep the README in Assets directory
+!Assets/README.md
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Editor directories and files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
