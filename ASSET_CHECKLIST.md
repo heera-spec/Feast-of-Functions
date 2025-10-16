@@ -10,7 +10,7 @@ This checklist helps you verify that all required assets are in place for the ga
 
 ## Required Assets Checklist
 
-### Images (30 files total)
+### Images (29 files total)
 
 #### Title & Tutorial (2 files)
 - [ ] `Assets/Opening & Tutorial.jpg`
@@ -39,7 +39,7 @@ This checklist helps you verify that all required assets are in place for the ga
 - [ ] `Assets/Guess Dipper.jpg`
 - [ ] `Assets/ConstellationsFin.jpg`
 
-#### Scarecrow Building Game (10 files)
+#### Scarecrow Building Game (9 files)
 - [ ] `Assets/Birds and Bunnies.jpg`
 - [ ] `Assets/Building the Scarecrow Intro page.jpg`
 - [ ] `Assets/Building the Scarecrow Start.jpg`
@@ -69,7 +69,50 @@ Run this command in the repository root to check for missing assets:
 
 ```bash
 # On Linux/Mac:
-for file in "Opening & Tutorial.jpg" "Title Page.jpg" "BG Theme 1.jpg" "BG Theme 2.jpg" "BG Theme 3.jpg" "Green bg.jpg" "autumn bg.jpg" "summer bg.jpg" "Game guide.jpg" "MiniGameOption1.jpg" "Mini-game 1 Constellation.jpg" "Orion.jpg" "Leo.jpg" "Big Dipper.jpg" "Guess It.jpg" "Guess Leo.jpg" "Guess Orion.jpg" "Guess Dipper.jpg" "ConstellationsFin.jpg" "Birds and Bunnies.jpg" "Building the Scarecrow Intro page.jpg" "Building the Scarecrow Start.jpg" "Building the Scarecrow Q1.jpg" "Building the Scarecrow Q2.jpg" "Building the Scarecrow Q3.jpg" "Building the Scarecrow Q4.jpg" "Building the Scarecrow Q5.jpg" "Scarecrow Complete.jpg" "Ending Page Feast.jpg" "feast-bgm.mp3" "answer correct.mp3" "level pass.wav" "level fail.mp3"; do
+required_files=(
+  # Title & Tutorial
+  "Opening & Tutorial.jpg"
+  "Title Page.jpg"
+  # Backgrounds
+  "BG Theme 1.jpg"
+  "BG Theme 2.jpg"
+  "BG Theme 3.jpg"
+  "Green bg.jpg"
+  "autumn bg.jpg"
+  "summer bg.jpg"
+  # Game screens
+  "Game guide.jpg"
+  # Constellation mini-game
+  "MiniGameOption1.jpg"
+  "Mini-game 1 Constellation.jpg"
+  "Orion.jpg"
+  "Leo.jpg"
+  "Big Dipper.jpg"
+  "Guess It.jpg"
+  "Guess Leo.jpg"
+  "Guess Orion.jpg"
+  "Guess Dipper.jpg"
+  "ConstellationsFin.jpg"
+  # Scarecrow game
+  "Birds and Bunnies.jpg"
+  "Building the Scarecrow Intro page.jpg"
+  "Building the Scarecrow Start.jpg"
+  "Building the Scarecrow Q1.jpg"
+  "Building the Scarecrow Q2.jpg"
+  "Building the Scarecrow Q3.jpg"
+  "Building the Scarecrow Q4.jpg"
+  "Building the Scarecrow Q5.jpg"
+  "Scarecrow Complete.jpg"
+  # Ending
+  "Ending Page Feast.jpg"
+  # Audio
+  "feast-bgm.mp3"
+  "answer correct.mp3"
+  "level pass.wav"
+  "level fail.mp3"
+)
+
+for file in "${required_files[@]}"; do
   if [ -f "Assets/$file" ]; then
     echo "✓ $file"
   else
