@@ -40,7 +40,7 @@ The following image files are referenced by `index.html` and need to be placed i
 - `Building the Scarecrow Q2.jpg` - Scarecrow question 2
 - `Building the Scarecrow Q3.jpg` - Scarecrow question 3
 - `Building the Scarecrow Q4.jpg` - Scarecrow question 4
-- `Building the Scarecrow Q5.jpg` - Scarecrow question 5
+- `Building the Scarecrow Q5.jpg` - Scarecrow question 5 (also used as final scarecrow image)
 - `Scarecrow Complete.jpg` - Completed scarecrow
 
 ## Required Audio Files
